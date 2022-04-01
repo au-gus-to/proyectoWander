@@ -1,0 +1,895 @@
+*{
+    margin: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+/*Menu Home/index*/
+
+/*Header*/
+
+.encabezado{
+    background-color: black;
+}
+
+.imgLogo{
+    background-color: black;
+    padding: 10px;
+}
+
+.headerImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 100;
+}
+
+ul a{
+    color: black;
+}
+
+/*navegacion*/
+.navegacion{
+    color: white;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+}
+
+
+.navegacion li{
+    display:inline-block;
+    padding: 15px;  
+}
+
+.main{
+    background-color: #b40347;
+}
+
+
+.valley{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-stretch: condensed;
+    text-align: center;
+    padding: 30px;
+}
+
+.parrafo_valley{
+    display: flex;
+    color: bisque;
+    text-align: justify;
+    padding: 20px;
+}
+
+/*header div*/
+
+
+p{
+    font-style: normal;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
+}
+
+.section{
+    background-color: #b40347;
+}
+
+h2{
+    text-align: center;
+}
+
+.nuestraBodega{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.imagenesUco{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.uco{
+    padding: 30px;
+    border-style: solid;
+    justify-content: stretch;
+    background-color: white;
+
+}
+
+.uco2{
+    padding: 30px;
+    border-style: solid;
+    justify-content: stretch;
+    background-color: white;
+}
+
+.lorem2{
+    border-style: hidden;
+    color: bisque;
+    text-align: justify;
+    padding: 20px;
+}
+
+/*footer home/index*/
+
+.footer{
+    color:bisque;
+    background-color: black;
+}
+
+.divFooter{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.colorDePie{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logoPie{
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.redes{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.ig{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wsp{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*intentando grid*/ 
+
+#index1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr 0.1fr 0.2fr 0.1fr 0fr;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "logo logo logo logo"
+    "navegacion navegacion navegacion navegacion"
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer"
+    ;
+    grid-row-gap: 2px;
+    align-items: center;
+}
+
+.encabezado{
+    grid-area: titulo;
+}
+
+.imgLogo{
+    grid-area: logo;
+}
+.navegacion{
+    grid-area: navegacion;
+}
+
+.main{
+    grid-area: main;
+}
+
+.section{
+    grid-area: section;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+/*media querie*/
+
+@media screen and (max-width: 660px){
+    .index{
+        background-color: #09743edc;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+
+    a{
+        color: black;
+    }
+    
+    .navegacion{
+        display: flex
+    }
+
+    .navegacion{
+        background-color: white;
+        justify-items: center;
+    }
+
+    .parrafo_valley {
+        color: black;
+    }
+
+    .imagenesUco{
+        flex-direction: column;
+
+    }
+
+    .lorem2{
+        color: black;
+    }
+
+    .footer{
+        background-color: white;
+        color: black;
+    }
+
+    .logoPie{
+        align-items: center;
+    }
+
+    .redes{
+        align-items: center;
+    }
+
+}
+
+
+/*grid menu index*/
+
+
+
+
+
+
+
+/*menu Nosotros */
+
+*{
+    margin: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nosotros1{
+    width: 100vw
+}
+
+.headerNos{
+    background-color: black;
+}
+
+.logoNosotros{
+    background-color: black;
+    padding: 10px;
+}
+
+.nosotros_logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 150px;
+}
+
+
+.menuNosotros{
+    text-align: center;
+    color: black;
+    background-color: gray;
+    padding: 10px;
+}
+
+.menuNosotros li{
+    display:inline-block;
+    position: relative;
+    font-size: 17px;
+    padding: 5px;
+}   
+
+/*h1 titulo*/
+
+.inicios{
+    color: black;
+    padding: 15px;
+    background-color: #8d1b47;
+    justify-content: center;
+}
+
+.textoInicios{
+    color: white;
+    padding: 10px;
+}
+
+.parrafo_nosotros{
+    color: black;
+    text-align: justify;  
+    padding: 10px;
+}
+
+.sectionNos{
+    background-color: #8d1b47;
+    padding: 30px;
+}
+
+.barricas{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: #8d1b47;
+}
+
+.barricas_parrafo{
+    background-color: #8d1b47;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.rowNos{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.barricas_imagen{
+    padding: 5px;
+    border-style: solid;
+    justify-content: stretch;
+    background-color: white;
+}
+
+
+.barricas_deposito{
+    padding: 5px;
+    border-style: solid;
+    justify-content: stretch;
+    background-color: white;
+}
+
+
+/*footer Nosotros*/
+
+.footer_nos{
+    color:bisque;
+    background-color: black;
+    padding: 10px;
+}
+
+.divNos{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_nosotros--logo{
+    padding: 5px;
+    border-radius: 50px;    
+}
+
+.redesNos{
+    display: flex;
+    align-items: center;
+}
+
+.igNos{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wspNos{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*Grid menu Nosotros*/
+
+@media screen and (max-width: 768px){
+
+    .headerNos{
+        flex-direction: column;
+        flex-wrap: wrap
+        }
+
+    .menuNosotros{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .inicios{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sectionNos{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer_nos{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+
+/*menu Galeria*/ 
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.galeria{
+    background-color: #2e0352
+}
+
+.galeria_fondo{
+    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
+    background-position: 0px;
+}
+
+.galeria_logo{
+    margin-top: 20px;
+    margin-left: 520px;
+    border-radius: 150px;
+}
+
+.menu_galeria{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #68043e;
+    border-style: inset;
+}
+
+.menu_galeria li{
+    display:inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 0 10px;  
+}
+
+.galeria_titulo--valley{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria_titulo--presentacion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+    margin: 50px;
+}
+
+/*Tabla menu Galeria*/
+
+.galeria_nuestrosp{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria-tabla{
+    border-color: black;
+    justify-content: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    padding-left: 60px;
+}
+
+.galeria-tabla--1{
+    border-color: #68043e;
+    background-color: white;
+}
+
+.galeria_pinot{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria-flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.galeria_pinot--1{
+    background-color: white;
+    border-style: groove;
+}
+
+.galeria_pinot--2{
+    background-color: white;
+    border-style: groove;
+}
+
+.galeria_cabernet{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria-flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.galeria_cabernet--1{
+    border-style: groove;
+    background-color: white;
+}
+
+.galeria_cabernet--2{
+    border-style: groove;
+    background-color: white;
+}
+
+.galeria_malbec{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria-flex3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.galeria_malbec--1{
+    border-style: groove;
+    background-color: white;
+}
+
+.galeria_malbec--2{
+    border-style: groove;
+    background-color: white;
+}
+
+.galeria_merlot{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.galeria-flex4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.galeria_merlot--1{
+    border-style: groove;
+    background-color: white;
+}
+
+.galeria_merlot--2{
+    border-style: groove;
+    background-color: white;
+}
+
+
+
+
+/*footer Galeria*/
+.galeria_footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:bisque;
+    background-color: #68043e;
+}
+
+.galeria_footer--logo{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+}
+
+
+/*Menu Ubicacion*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.ubicacion{
+    background-color: #2e0352
+}
+
+.ubicacion-fondo{
+    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
+    background-position: 0px;
+}
+
+.ubicacion-logo{
+    margin-top: 20px;
+    margin-left: 520px;
+    border-radius: 150px;
+}
+
+.menu-ubicacion{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #68043e;
+    border-style: inset;
+}
+
+.menu-ubicacion li{
+    display:inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 0 10px; 
+}
+
+/*primer h2 Titulo*/
+
+.ubicacion-titulo{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.article_conoce--1{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.conoce_parrafo{
+    color: black;
+    border-color: #68043e;
+    border-style: groove;
+    background-color: beige;
+    margin: 60px;
+}
+
+.ubicacion-titulo2{
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.ubicacion-map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+/*footer ubicacion*/
+
+.ubicacion-footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:bisque;
+    background-color: #68043e;
+}
+
+.ubicacion-footer--logo{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+}
+
+
+
+
+/*Menu Contacto*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.contacto{
+    background-color: #f7f1fc
+}
+
+.contacto-fondo{
+    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
+    background-position: 0px;
+}
+
+.contacto-logo{
+    margin-top: 20px;
+    margin-left: 520px;
+    border-radius: 150px;
+}
+
+/*navegacion - menu principal*/
+
+.contacto-menu{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #68043e;
+    border-style: inset;
+}
+
+.contacto-menu li{
+    display:inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.contacto-titulo1{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contacto-titulo2{
+    color: rgb(77, 6, 83);
+    background-color: #e4643d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+    border-style: outset;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*header 2 formulario*/
+
+.contacto-datos{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.datos-nombre{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos-apellido{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos-domicilio{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos-numero{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos-correo{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos-genero{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.datos-provincia{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px; 
+}
+
+.datos-informacion{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datos_underline{
+    text-decoration: underline;
+}
+
+.datos-checkbox{
+    color: rgb(77, 6, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*footer contacto*/
+
+.footer-contacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:bisque;
+    background-color: #68043e;
+}
+
+.contacto-footer--logo{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+}
