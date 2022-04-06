@@ -12,13 +12,18 @@ html{
 
 /*Header*/
 
-.encabezado{
-    background-color: black;
+
+.logoW{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.imgLogo{
-    background-color: black;
-    padding: 10px;
+.wanL{
+    box-sizing: border-box;
+    
 }
 
 .headerImg{
@@ -30,7 +35,6 @@ html{
 
 h1{
     font-style: normal;
-    font-weight: 100;
 }
 
 ul a{
@@ -41,7 +45,6 @@ ul a{
 .navegacion{
     color: white;
     text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: gray;
 }
 
@@ -52,23 +55,25 @@ ul a{
 }
 
 .main{
-    background-color: #b40347;
+    font-size: 100px;
+    background-color: #2cad82ab;
+    padding: 20px;
 }
 
 
-.valley{
-    color: bisque;
+.textoW{
+    color: rgba(0, 0, 0, 0.6);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-stretch: condensed;
-    text-align: center;
+    text-align: left;
     padding: 30px;
 }
 
-.parrafo_valley{
+.parrafoW{
     display: flex;
-    color: bisque;
-    text-align: justify;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: start;
     padding: 20px;
 }
 
@@ -83,22 +88,12 @@ p{
 }
 
 .section{
-    background-color: #b40347;
+    background-color: #2cad82ab;
+    color: rgba(0, 0, 0, 0.6);
 }
 
-h2{
-    text-align: center;
-}
 
-.nuestraBodega{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.imagenesUco{
+.imagenesW{
     margin-top: 10px;
     padding-top: 10px;
     display: flex;
@@ -107,16 +102,16 @@ h2{
     justify-content: space-evenly
 }
 
-.uco{
-    padding: 30px;
+.nat1{
+    padding: 0px;
     border-style: solid;
     justify-content: stretch;
     background-color: white;
 
 }
 
-.uco2{
-    padding: 30px;
+.nat2{
+    padding: 0px;
     border-style: solid;
     justify-content: stretch;
     background-color: white;
@@ -124,9 +119,9 @@ h2{
 
 .lorem2{
     border-style: hidden;
-    color: bisque;
-    text-align: justify;
-    padding: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: start;
+    padding: 30px;
 }
 
 /*footer home/index*/
@@ -166,8 +161,6 @@ h2{
     border-radius: 5px;
     margin: 10px;
 }
-
-/*intentando grid*/ 
 
 #index1{
     display: grid;
@@ -286,17 +279,14 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#nosotros1{
-    width: 100vw
-}
 
-.headerNos{
-    background-color: black;
-}
 
 .logoNosotros{
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .nosotros_logo{
@@ -308,78 +298,65 @@ html{
 
 
 .menuNosotros{
-    text-align: center;
-    color: black;
+    color: white;
+    text-align:center;
     background-color: gray;
-    padding: 10px;
 }
 
 .menuNosotros li{
     display:inline-block;
-    position: relative;
-    font-size: 17px;
-    padding: 5px;
+    padding: 15px;
 }   
 
 /*h1 titulo*/
 
 .inicios{
     color: black;
-    padding: 15px;
-    background-color: #8d1b47;
-    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(247, 184, 68), orange);
 }
 
 .textoInicios{
     color: white;
     padding: 10px;
+    text-align: left;
 }
 
-.parrafo_nosotros{
-    color: black;
-    text-align: justify;  
+.parrafo_nosotros p{
+    color: black; 
     padding: 10px;
+    text-align: left;
 }
 
 .sectionNos{
-    background-color: #8d1b47;
-    padding: 30px;
+    background-image: linear-gradient(to bottom, orange, rgba(253, 42, 42, 0.829));
+    padding: 10px;
 }
 
-.barricas{
-    padding: 15px;
-    text-align: center;
-    color: white;
-    background-color: #8d1b47;
+.sectionNos h2{
+    padding: 10px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.barricas_parrafo{
-    background-color: #8d1b47;
-    text-align: justify;
+.wand_parrafo{
+    text-align: left;
     padding: 10px;
 }
 
 
 .rowNos{
     display: flex;
-    overflow: hidden;
     flex-direction: row;
-    justify-content: space-evenly
-}
-
-.barricas_imagen{
-    padding: 5px;
-    border-style: solid;
-    justify-content: stretch;
-    background-color: white;
+    justify-content: start;
+    padding-top: 40px;
 }
 
 
-.barricas_deposito{
-    padding: 5px;
-    border-style: solid;
-    justify-content: stretch;
-    background-color: white;
+.rowNos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 
@@ -469,8 +446,11 @@ html{
 }
 
 .galeria_fondo{
-    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
-    background-position: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .galeria_logo{
@@ -480,19 +460,14 @@ html{
 }
 
 .menu_galeria{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #68043e;
-    border-style: inset;
+    color: white;
+    text-align:center;
+    background-color: gray;
 }
 
 .menu_galeria li{
     display:inline-block;
-    position: relative;
-    font-size: 20px;
-    padding: 0 10px;  
+    padding: 15px; 
 }
 
 .galeria_titulo--valley{
@@ -641,15 +616,24 @@ html{
 
 /*footer Galeria*/
 .galeria_footer{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:bisque;
-    background-color: #68043e;
+    background-color: black;
+    padding: 10px;
 }
 
-.galeria_footer--logo{
-    padding-top: 1px;
-    padding-bottom: 1px;
+.wandFooter{
+    display: flex;
+    justify-content: center;
+}
+
+.logoFoot{
+    padding: 10px;
     border-radius: 50px;
+}
+
+.redesWand{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -669,8 +653,11 @@ html{
 }
 
 .ubicacion-fondo{
-    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
-    background-position: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .ubicacion-logo{
@@ -680,19 +667,14 @@ html{
 }
 
 .menu-ubicacion{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #68043e;
-    border-style: inset;
+    color: white;
+    text-align:center;
+    background-color: gray;
 }
 
 .menu-ubicacion li{
     display:inline-block;
-    position: relative;
-    font-size: 20px;
-    padding: 0 10px; 
+    padding: 15px;  
 }
 
 /*primer h2 Titulo*/
@@ -771,8 +753,11 @@ html{
 }
 
 .contacto-fondo{
-    background-image: url(https://www.wineryon.com/wp-content/uploads/2020/04/Uva-Monastrell-Demuerte-Wine-by-WineryOn.jpg);
-    background-position: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .contacto-logo{
@@ -784,19 +769,14 @@ html{
 /*navegacion - menu principal*/
 
 .contacto-menu{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #68043e;
-    border-style: inset;
+    color: white;
+    text-align:center;
+    background-color: gray;
 }
 
 .contacto-menu li{
     display:inline-block;
-    position: relative;
-    font-size: 20px;
-    padding: 0 10px;
+    padding: 15px;
 }
 
 .contacto-titulo1{
