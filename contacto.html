@@ -1,138 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Wanderlust</title>
 
-    <link rel="shortcut icon" href="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/iconfly.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/iconfly.jpg"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="estilo.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
 </head>
+
 <body class="contactoW">
 
-    <div class="contacto-fondo">
-        <a href="../Desafio Idea+Lemos Augusto/index.html"><img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/wander.jpg" alt="valley winery" title="wanderl" width="500px" height="300px" class="animate__animated animate__shakeY"></a>
-    </div>
+    <div class="container-fluid">
 
-    </header>
-           
-        <nav class="contacto-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="galeria.html">Visas y Destinos</a></li>
-                <li><a href="ubicacion.html">Experiencias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="contacto-fondo">
+            <a href="../Desafio Idea+Lemos Augusto/index.html"><img
+                    src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/wander.jpg" alt="valley winery"
+                    title="wanderl" width="500px" height="300px" class="animate__animated animate__shakeY"></a>
+        </div>
 
-    <h2 class="contacto-titulo1">Valley Winery</h2>
+        <div class="">
+            <nav class="contactoWanderMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="galeria.html">Visas y Destinos</a></li>
+                    <li><a href="ubicacion.html">Experiencias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <header>
-            <h2 class="contacto-titulo2">Contactanos para más Informacion sobre Nuestros Vinos</h2>
-        
-            <div>
-                <h4 class="contacto-datos">Completa los siguientes datos:</h4>
+        <div class="row">
+
+            <h3>Si querés saber mas sobre los destinos y sus visas te invitamos a que nos contactes!</h3>
+
+            <div class="contacto-datos">
+                <h4>Completa los siguientes datos:</h4>
             </div>
 
             <section>
-                <article>
-                    <form action="#">
-                     <div>
-                        <label for="nombre" class="datos-nombre">Ingrese su nombre:</label>
-                        <input type="text" placeholder="Ingrese su nombre" value="nombre" name="nombre">
+                <form class="row g-3 needs-validation formularioWander" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Nombre completo</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="" required>
+                      <div class="valid-feedback">
+                        Se ve bien!
+                      </div>
                     </div>
-
-                    <div>
-                        <label for="apellido" class="datos-apellido">Ingrese su apellido:</label>
-                        <input type="text" placeholder="Ingrese su apellido" value="apellido" name="apellido">
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="" required>
+                      <div class="valid-feedback">
+                        Se ve bien!
+                      </div>
                     </div>
-                        
-                    <div>
-                        <label for="Domicilio" class="datos-domicilio">Ingrese su Domicilio</label>
-                        <input type="text" placeholder="Ingrese su domicilio" value="Domicilio" name="Domicilio">
-                        <label for="Numero" class="datos-numero">n°</label>
-                        <input type="number" placeholder="ingrese n°" value="numero" name="numero">
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">E-mail</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Complete con su Email.
+                        </div>
+                      </div>
                     </div>
-                        
-                    <div>
-                        <label for="email" class="datos-correo">Ingrese su correo</label>
-                        <input type="email" name="" placeholder="Ingrese su e-mail" value="email">
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Complete con su ciudad.
+                      </div>
                     </div>
-                    
-                    <div class="datos-genero">
-                        <label for="genero">Indique su genero</label>
-                        <input type="radio" name="genero" value="hombre">Masculino
-                        <input type="radio" name="genero" value="mujer">Femenino
-                        <input type="radio" name="genero" value="no especifica">No especifica
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">Provincia</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elija...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
                     </div>
-
-                        <fieldset  class="datos-provincia">
-                            <legend>Selecciona tu Provincia</legend>
-                            <label for="provincia">Provincia:</label>
-                            <select name="provincia" id="">
-                                <option value="juj">jujuy</option>
-                                <option value="sal">salta</option>
-                                <option value="for">formosa</option>
-                                <option value="cha">chaco</option>
-                                <option value="corr">corrientes</option>
-                                <option value="mis">misiones</option>
-                                <option value="cat">catamarca</option>
-                                <option value="lar">la rioja</option>
-                                <option value="tuc">tucuman</option>
-                                <option value="sgo">Santiago del estero</option>
-                                <option value="sfe">santa fe</option>
-                                <option value="cord">cordoba</option>
-                                <option value="sj">san juan</option>
-                                <option value="sl">san luis</option>
-                                <option value="men">mendoza</option>
-                                <option value="ba">buenos aires</option>
-                                <option value="neu">neuquen</option>
-                                <option value="lp">la pampa</option>
-                                <option value="sc">santa cruz</option>
-                                <option value="chu">chubut</option>
-                                <option value="er">entre rios</option>
-                                <option value="rn">rio negro</option>
-                                <option value="tdf">tierra del fuego</option>>
-                            </select>
-                        </fieldset>    
-                        
-                    <div class="datos-informacion">
-                        <h4 class="datos_underline">Dejanos tu comentario para mas informacion</h4>
-                        <textarea name="" id="" cols="30" rows="10"></textarea> <br>
-                        
-                        <input type="submit"> enviar formulario
-                        <input type="reset"> borrar datos
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
                     </div>
-
-                    </form>
-                </article>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Estoy de acuerdo con los términos y condiciones.
+                        </label>
+                        <div class="invalid-feedback">
+                          Debe estar de acuerdo antes de Enviar.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                    </div>
+                  </form>
             </section>
-    </header> <br>
-    
-    <div class="datos-checkbox">
-        <input type="checkbox" name="catalogo" value="1">Enviar catalago <br>
-        <input type="checkbox" name="tours" value="2">Enviar informacion sobre tours completos <br>
-        <input type="checkbox" name="promociones" value="3">Enviar promociones compra mayorista
+        </div>
+
+
+        <footer class="wanderContacto row">
+
+            <div class="wanderLogCon">
+                <a href="../Desafio Idea+Lemos Augusto/index.html"><img
+                        src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/iconfly.jpg" alt="" height="100px"
+                        width="100px" class="wanderFootLogo"></a>
+
+                <div class="redesWanderCon">
+                    <p>Seguinos en:</p>
+                    <img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/instagram.jpg" alt="" height="25px"
+                        width="25px" class="ig"> Instagram: Wander.Lust
+                    <img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/wsp.jpg" alt="" height="25px"
+                        width="25px" class="wsp"> Whatsapp: 261-7448523
+
+                </div>
+            </div>
+
+        </footer>
+
     </div>
 
-    <br>
-    
-    <hr>
-    <footer class="footer-contacto">
-        <a href="../Desafio Idea+Lemos Augusto/index.html"><img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/iconfly.jpg" alt="" height="100px" width="100px" class="contacto-footer--logo"></a>
-        <p>Seguinos en:</p>
-        <img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/instagram.jpg" alt="" height="25px" width="25px" class="ig"> Instagram: Wander.Lust
-            <img src="../Desafio Idea+Lemos Augusto/Multimedia/wanderlust/wsp.jpg" alt="" height="25px" width="25px" class="wsp"> Whatsapp: 261-7448523
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

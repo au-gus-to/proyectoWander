@@ -37,7 +37,13 @@ h1{
 }
 
 ul a{
+    text-decoration: none;
     color: black;
+    font-size: 17px;
+}
+
+ul a:hover{
+    color: white;
 }
 
 /*navegacion*/
@@ -68,6 +74,7 @@ ul a{
     text-align: left;
     padding: 30px;
 }
+
 
 .parrafoW{
     display: flex;
@@ -358,6 +365,17 @@ html{
     justify-content: end;
 }
 
+.indo1{
+    border-radius: 2rem;
+}
+
+.nz1{
+    border-radius: 2rem;
+}
+
+.thai1{
+    border-radius: 2rem;
+}
 
 /*footer Nosotros*/
 
@@ -427,8 +445,6 @@ html{
 
 
 
-
-
 /*menu Galeria*/ 
 
 *{
@@ -440,11 +456,11 @@ html{
     font-size: 62,5%;
 }
 
-.galeria{
-    background-color: #2e0352
+.headerVisas{
+    width: 100%;
 }
 
-.galeria_fondo{
+.visasFondo{
     display: flex;
     justify-content: center;
     background-color: white;
@@ -452,166 +468,107 @@ html{
     box-sizing: border-box;
 }
 
-.galeria_logo{
-    margin-top: 20px;
-    margin-left: 520px;
-    border-radius: 150px;
-}
 
-.menu_galeria{
+.menuVisas{
     color: white;
     text-align:center;
     background-color: gray;
 }
 
-.menu_galeria li{
+.menuVisas li{
+    text-decoration: none;
     display:inline-block;
-    padding: 15px; 
+    padding: 15px;
 }
 
-.galeria_titulo--valley{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
+/*Section Galeria*/
 
-.galeria_titulo--presentacion{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: bisque;
-    margin: 50px;
-}
-
-/*Tabla menu Galeria*/
-
-.galeria_nuestrosp{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.galeria-tabla{
-    border-color: black;
-    justify-content: center;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px;
-    padding-left: 60px;
-}
-
-.galeria-tabla--1{
-    border-color: #68043e;
-    background-color: white;
-}
-
-.galeria_pinot{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.galeria-flex1{
+.sectionVisas{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
-}
-
-.galeria_pinot--1{
-    background-color: white;
-    border-style: groove;
-}
-
-.galeria_pinot--2{
-    background-color: white;
-    border-style: groove;
-}
-
-.galeria_cabernet{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
+    justify-content: space-evenly;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.galeria-flex2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
-}
-
-.galeria_cabernet--1{
+.sectionVisas img{
+    margin-top: 10px;
     border-style: groove;
-    background-color: white;
+    border-radius: 8px;
 }
 
-.galeria_cabernet--2{
-    border-style: groove;
-    background-color: white;
+.secNz img{
+    height: 150px; width: 250px;
+    transition: all 0.5s;
 }
 
-.galeria_malbec{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+.secNz img:hover{
+    height: 200px; width: 300px;
 }
 
-.galeria-flex3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
+.secAus img{
+    height: 150px; width: 250px;
+    transition: all 0.5s;
 }
 
-.galeria_malbec--1{
-    border-style: groove;
-    background-color: white;
+.secAus img:hover{
+    height: 200px; width: 300px;
 }
 
-.galeria_malbec--2{
-    border-style: groove;
-    background-color: white;
+.secFra img{
+    height: 150px; width: 250px;
+    transition: all 0.5s;
 }
 
-.galeria_merlot{
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+.secFra img:hover{
+    height: 200px; width: 300px;
 }
 
-.galeria-flex4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
+.secDin img{
+    height: 150px; width: 250px;
+    transition: all 0.5s;
 }
 
-.galeria_merlot--1{
-    border-style: groove;
-    background-color: white;
+.secDin img:hover{
+    height: 200px; width: 300px;
 }
 
-.galeria_merlot--2{
-    border-style: groove;
-    background-color: white;
+.infoDiv{
+    margin: 10px;
+    text-align: left;
+}
+
+h4{
+    margin-top: 20px;
 }
 
 
+.infoDiv p{
+    margin-top: 15px;
+    font-size: medium;
+    text-align: justify;
+}
 
+.wanderUl{
+    margin-top: 20px;
+}
+
+.infoDivNz{
+    background-color: skyblue;
+}
+
+.infoDivAus{
+    background-color: lightsalmon;
+}
+
+.infoDivFr{
+    background-color: rgba(236, 38, 120, 0.781);
+}
+
+.infoDivDin{
+    background-color: rgba(2, 145, 33, 0.842);
+}
 
 /*footer Galeria*/
 .galeria_footer{
@@ -721,16 +678,25 @@ html{
 
 /*footer ubicacion*/
 
-.ubicacion-footer{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.ubiFooter{
     color:bisque;
-    background-color: #68043e;
+    background-color: black;
+    padding: 10px;
 }
 
-.ubicacion-footer--logo{
-    padding-top: 1px;
-    padding-bottom: 1px;
+.expWander{
+    display: flex;
+    justify-content: center;
+}
+
+.expLogo{
+    padding: 10px;
     border-radius: 50px;
+}
+
+.redesWanderUbi{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -745,6 +711,7 @@ html{
 
 html{
     font-size: 62,5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contacto{
@@ -767,108 +734,47 @@ html{
 
 /*navegacion - menu principal*/
 
-.contacto-menu{
+.contactoWanderMenu{
     color: white;
     text-align:center;
     background-color: gray;
 }
 
-.contacto-menu li{
+.contactoWanderMenu li{
     display:inline-block;
     padding: 15px;
 }
-
-.contacto-titulo1{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.contacto-titulo2{
-    color: rgb(77, 6, 83);
-    background-color: #e4643d;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    text-align: center;
-    border-style: outset;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
 /*header 2 formulario*/
 
 .contacto-datos{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     text-align: left;
-    text-decoration: underline;
 }
 
-.datos-nombre{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.formularioWander{
+    margin: 1rem;
 }
 
-.datos-apellido{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.datos-domicilio{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.datos-numero{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.datos-correo{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.datos-genero{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-.datos-provincia{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px; 
-}
-
-.datos-informacion{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.datos_underline{
-    text-decoration: underline;
-}
-
-.datos-checkbox{
-    color: rgb(77, 6, 83);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 /*footer contacto*/
 
-.footer-contacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.wanderContacto{
     color:bisque;
-    background-color: #68043e;
+    background-color: black;
+    padding: 10px;
 }
 
-.contacto-footer--logo{
-    padding-top: 1px;
-    padding-bottom: 1px;
+.wanderLogCon{
+    display: flex;
+    justify-content: center;
+}
+
+.wanderFootLogo{
+    padding: 10px;
     border-radius: 50px;
+}
+
+.redesWanderCon{
+    display: flex;
+    align-items: center;
 }
